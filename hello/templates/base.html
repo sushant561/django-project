@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title> {% block title %}{% endblock title %}</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+            <h1 class="logo lg-heading text-light">{{ request.user }}</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/about">About</a></li>
+                <li class="nav-item"><a href="/contact">Contact</a></li>
+                <li class="nav-item"><a href="/logout">LogOut</a></li>
+            </ul>
+        
+        </div>
+      </nav>
+    
+
+      {% block body %} {% endblock body %}
+
+      <footer class="footer">
+        <div>
+             <img src="/static/img/whatsapp.png" class="sushantart" alt="this is whatsapp logo">
+             <img src="/static/img/bloger.png" class="sushantart" alt="this is blog logo">
+             <img src="/static/img/susbyoutube.png" class="sushantart susyoutube" alt="this is youtube logo">
+        </div>
+    
+        <p>World Traval &copy; 2022, All Right Reserved</p>
+      </footer>
+  </header>
+
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<section class="contact-form">
+    <div class="container">
+      <div class="form-wrapper">
+          <div class="company-address">
+              <div class="address-group">
+          <h2 class="text-gray md-heading">Location</h2>        
+          <p>PIN 835302 jharkhand state, Lohardaga, Kisko</p>
+              </div>
+              <div class="address-group">
+          <h2 class="text-gray md-heading">Email</h2>        
+          <p>sushantbhagat@mycompany.com</p>
+              </div>
+              <div class="address-group">
+          <h2 class="text-gray md-heading">Call</h2>        
+          <p>+91 754*****44</p>
+              </div>
+              <img src="/static/img/company-img (1).jpg" alt="company image">
+          </div>
+          <form method="post" action="/contact" class="form">
+            {% csrf_token %}
+              <h1 class="lg-heading text-black"> Contact Us</h1>
+              <p class="text-gray"> Let us know your quistion, suggestion and concerns by fills out the contact from bleow</p>
+              <div class="form-group">
+              <label for="username">Full Name</label>
+              <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="desc" id="message"></textarea>
+              </div>
+              <button type="submit" class="form-btn">Submit</button>
+          </form>
+      </div>
+    </div>
+  
+</section>
+{% endblock body %}

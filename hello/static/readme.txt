@@ -1,0 +1,1 @@
+this is statics file anyone can see this pages

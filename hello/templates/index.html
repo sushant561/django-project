@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="new_Header">
+    <div class="header-content">
+        <h1 class="lg-heading text-light main-heading" >travel the world</h1>
+        <p class="text-light">travel the world, experience the greateness, it's the best gift given by nature</p>
+        <a href="#explore-places" class="btn btn-primary text-red ">Explore places</a>
+    </div>
+</div>
+
+<section class="showcase" id="explore-places">
+    <div class="container">
+        <div class="row row1">
+            <div class="img-box">
+                <img src="/static/img/showcase-photo3.jpg" alt="this is nature image">
+            </div>
+            <div class="text-box">
+            <h2 class="lg-heading text-black">DEGANVY, U.K</h2> 
+            <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quidem labore doloribus assumenda accusamus magnam recusandae vero suscipit ipsam. Quisquam, laborum veritatis corporis eligendi aliquid esse harum fuga iusto ducimus!</p>   
+            <a href="/about" class="btn btn-secondary">More</a>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="img-box">
+                <img src="/static/img/showcase-photo1.jpg" alt="this is nature image">
+            </div>
+            <div class="text-box">
+                <h2 class="lg-heading text-black">DESERT, EGYPT</h2>
+                <p class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo amet commodi placeat saepe nemo. Accusantium explicabo dolores et culpa enim dolorum odio vero, nemo ipsum quos porro debitis sequi magni?</p>
+                <a href="/about" class="btn btn-secondary">More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+ <div class="container">
+    <div class="box-wrapper">
+        <div class="box box-1">
+         <h2 class="md-heading">Adventure</h2>                
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione odit porro aspernatur beatae perferendis animi accusamus repellat.</p>
+        </div>
+
+        <div class="box box-2">
+         <h2 class="md-heading">Less price</h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum fuga quis aperiam laudantium assumenda, optio sit. Ullam dolores aliquid!</p>
+        </div>
+
+        <div class="box box-3">
+         <h2 class="md-heading">Experice</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi officia in magni modi maiores impedit dicta repellat, dolore pariatur.</p>
+        </div>
+    </div> 
+ </div>
+ 
+</section>
+{% endblock body %}
